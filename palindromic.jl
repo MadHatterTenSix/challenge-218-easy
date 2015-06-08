@@ -10,7 +10,7 @@ a = line
 b = reverse(line)
 x = BigInt(a)
 y = BigInt(b)
-z = 0
+z = 0  # final palindrome
 steps = 0
 @printf "%d gets palindromic after " x
 while ((x + y) / 2) != x
