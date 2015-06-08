@@ -12,7 +12,6 @@ x = BigInt(a)
 y = BigInt(b)
 z = 0  # final palindrome
 steps = 0
-@printf "%d gets palindromic after " x
 while a != b
   z = x + y
   a = string(z)
@@ -21,4 +20,4 @@ while a != b
   y = BigInt(b)
   steps = steps + 1
 end
-@printf "%d steps: %d\n" steps z
+@printf "%s gets palindromic after %d steps: %d\n" line steps z
