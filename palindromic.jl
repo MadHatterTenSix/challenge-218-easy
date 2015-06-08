@@ -17,7 +17,6 @@ function f()
   b = reverse(line)
   x = BigInt(a)
   y = BigInt(b)
-  z = 0
   steps = 0
   while a != b
     z = x + y
