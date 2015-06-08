@@ -10,14 +10,13 @@ a = line
 b = reverse(line)
 x = BigInt(a)
 y = BigInt(b)
-z = 0  # final palindrome
+z = 0
 steps = 0
-while a != b
-  z = x + y
+while ((z = x + y) / 2) != x
   a = string(z)
   b = reverse(a)
   x = BigInt(a)
   y = BigInt(b)
   steps = steps + 1
 end
-@printf "%s gets palindromic after %d steps: %d\n" line steps z
+@printf "%s gets palindromic after %d steps: %d\n" line steps x
