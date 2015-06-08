@@ -10,15 +10,15 @@ a = line
 b = reverse(line)
 x = BigInt(a)
 y = BigInt(b)
-z = x + y
+z = 0
 steps = 0
 @printf "%d gets palindromic after " x
-while (z / 2) != x
+while ((x + y) / 2) != x
+  z = x + y
   a = string(z)
   b = reverse(a)
   x = BigInt(a)
   y = BigInt(b)
-  z = x + y
   steps = steps + 1
 end
 @printf "%d steps: %d\n" steps z
