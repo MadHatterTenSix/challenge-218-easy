@@ -13,7 +13,7 @@ y = BigInt(b)
 z = 0  # final palindrome
 steps = 0
 @printf "%d gets palindromic after " x
-while ((x + y) / 2) != x
+while a != b
   z = x + y
   a = string(z)
   b = reverse(a)
