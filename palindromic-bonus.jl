@@ -11,17 +11,6 @@
 #   SerJothanChanes
 #   Oops_TryAgain
 
-function reverseNumber(n)
-  ret = 0
-  k = n
-  while k >= 10
-    ret = (ret * 10) + (k % 10)
-    k = div(k,10)
-  end
-  ret = (ret * 10) + (k % 10)
-  ret
-end
-
 function lychrel(n,max)
   steps = 0
   a = string(n)
