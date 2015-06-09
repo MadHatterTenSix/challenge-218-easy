@@ -42,7 +42,7 @@ end
 
 function main()
   first = BigInt(readline() |> chomp)
-  last = BigInt(readline() |> chomp)
+  last  = BigInt(readline() |> chomp)
   steps = BigInt(readline() |> chomp)
 
   @printf "\nComputing numbers %d through %d with maximum number of steps set to %d.\n\n" first last steps
