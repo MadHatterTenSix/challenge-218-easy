@@ -46,7 +46,7 @@ function main()
   steps = BigInt(readline() |> chomp)
 
   @printf "\nComputing numbers %d through %d with maximum number of steps set to %d.\n\n" first last steps
-	@printf "%8s  %8s  %s\n" "NUMBER" "STEPS" "PALINDROME/LYCHREL"
+  @printf "%8s  %8s  %s\n" "NUMBER" "STEPS" "PALINDROME/LYCHREL"
 	
   start(first,last,steps)
 end
